@@ -1,0 +1,32 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+  gap: 40px;
+}
+
+header h1 > img {
+  width: 50px;
+  /* position: absolute; */
+}
+
+header h1 {
+  /* position: relative; */
+  font-size: 50px;
+  font-weight: 500;
+}
+
+header button,
+.image {
+  width: fit-content;
+  margin: 0 auto;
+}
+.image {
+  width: 150px;
+}

@@ -1,0 +1,51 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main img.first-image {
+  border-radius: 10px;
+  border: 7px solid #FFFCE4;
+  border-bottom-width: 15px;
+}
+
+main .block {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.block > * {
+  flex: 1;
+}
+
+.post >  * {
+  margin-block-end: 25px;
+}
+
+.post > h2 + p {
+  width: 50%;
+}
+
+.meta-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta-data > span:nth-child(2) {
+  color: #828282;
+}
+
+@media (max-width: 750px) {
+
+  main .block {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1050px) {
+
+  main .block {
+    flex-direction: column;
+  }
+}

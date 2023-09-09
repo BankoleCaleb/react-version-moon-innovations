@@ -1,0 +1,87 @@
+:root {
+  --white-color: #FFFCE4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  border-top: 1px solid var(--white-color);
+  padding: 100px 0;
+}
+section p:not(.testimony) {
+  line-height: 34px;
+}
+
+.partners > img {
+  display: block;
+}
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.center {
+  text-align: center;
+  width: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.caption {
+  width: 80%;
+  max-width: 800px;
+}
+
+section > .container > * {
+  margin-block-end: 20px;
+}
+
+
+.column p {
+  margin: 20px 0;
+}
+
+@media (min-width: 750px) {
+
+  section h2 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+  section p:not(.testimony) {
+    font-size: 24px;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .image-grid > *:first-child {
+    grid-row: span 2;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .demacated {
+    border-right: 1px solid #fffcef;
+    padding-right: 30px;
+  }
+
+}
+
+@media (min-width: 850px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+}
